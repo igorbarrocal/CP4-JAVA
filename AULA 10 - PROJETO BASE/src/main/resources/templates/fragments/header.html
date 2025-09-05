@@ -8,9 +8,10 @@
             FIAP
         </div>
         <nav class="hidden md:flex space-x-6">
-        <a th:href="@{/}" class="text-gray-600 hover:text-blue-600">Home</a>
+            <a th:href="@{/}" class="text-gray-600 hover:text-blue-600">Home</a>
             <a href="#" class="text-gray-600 hover:text-blue-600">About</a>
             <a th:href="@{/recursos}" class="text-gray-600 hover:text-blue-600">Recursos</a>
+            <a th:href="@{/projetos}" class="text-gray-600 hover:text-blue-600">Projetos</a>
         </nav>
         <div class="md:hidden">
             <button id="hamburger" class="focus:outline-none">
@@ -20,18 +21,17 @@
             </button>
         </div>
     </div>
-    <nav id="mobileMenu" class="md:hidden bg-white shadow-md">
+    <nav id="mobileMenu" class="md:hidden bg-white shadow-md hidden">
         <a th:href="@{/}" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Home</a>
         <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">About</a>
         <a th:href="@{/recursos}" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Recursos</a>
+        <a th:href="@{/projetos}" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Projetos</a>
     </nav>
 </header>
-
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         const hamburger = document.getElementById('hamburger');
         const mobileMenu = document.getElementById('mobileMenu');
-
         hamburger.addEventListener('click', function () {
             mobileMenu.classList.toggle('hidden');
             hamburger.querySelector('.hamburger').classList.toggle('active');
