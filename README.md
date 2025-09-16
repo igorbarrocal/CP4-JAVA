@@ -97,6 +97,6 @@ src/
 - O projeto é para aprendizado e demonstração de arquitetura MVC com Spring Boot.
 - Para alterar o idioma, modifique as mensagens em `messages.properties` e `messages_en.properties`.
 
----
 
-**Por: [igorbarrocal](https://github.com/igorbarrocal)**
+
+
